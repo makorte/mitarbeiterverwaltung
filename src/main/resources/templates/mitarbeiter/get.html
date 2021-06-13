@@ -24,7 +24,7 @@
           <td th:text="${m?.email}"></td>
           <td th:text="${m?.telefon}"></td>
           <td><a>Bearbeiten</a></td>
-          <td><a>Löschen</a></td>
+          <td><a th:href="@{/mitarbeiterverwaltung/delete(id=${m.id})}">Löschen</a></td>
         </tr>
       </table>
     </div>
