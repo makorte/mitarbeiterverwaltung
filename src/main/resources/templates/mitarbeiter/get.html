@@ -23,7 +23,7 @@
           <td th:text="${m.nachname}"></td>
           <td th:text="${m?.email}"></td>
           <td th:text="${m?.telefon}"></td>
-          <td><a>Bearbeiten</a></td>
+          <td><a th:href="@{/mitarbeiterverwaltung/edit(id=${m.id})}">Bearbeiten</a></td>
           <td><a th:href="@{/mitarbeiterverwaltung/delete(id=${m.id})}">Löschen</a></td>
         </tr>
       </table>
